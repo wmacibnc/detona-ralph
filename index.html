@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--settings-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detona Ralph</title>
+
+    <!-- fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- styles-->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="menu">
+            <div class="menu-time">
+                <h2 class="menu-titulo">Tempo restante</h2>
+                <h2 class="menu-conteudo" id="time-left">0</h2>
+            </div>
+            <div class="menu-score">
+                <h2 class="menu-titulo">Pontuação</h2>
+                <h2 class="menu-conteudo" id="score">0</h2>
+            </div>
+            <div class="menu-lives">
+                <img height="60px" src="./src/imagens/player.png" alt="fiti di higadir"/>
+                <h2 class="menu-conteudo"> x <span id="vidas">0</span></h2>
+            </div>
+        </div>
+
+        <h1 class="titulo"> Detona Ralph </h1>
+
+        <div class="panel">
+            <div class="panel-row">
+                <div class="square" id="1"></div>
+                <div class="square" id="2"></div>
+                <div class="square" id="3"></div>
+            </div>
+
+            <div class="panel-row">
+                <div class="square" id="4"></div>
+                <div class="square" id="5"></div>
+                <div class="square" id="6"></div>
+            </div>
+
+            <div class="panel-row">
+                <div class="square" id="7"></div>
+                <div class="square" id="8"></div>
+                <div class="square" id="9"></div>
+            </div>
+        </div>
+        <div class="resultado" id="resultado">
+            <div class="resultado-row">
+                <p class="gameover">Game Over</p>
+                <p>Pontos: <span id="pontos">0</span></p>
+                <p>Erros: <span id="erros">0</span></p>
+                <p>Vidas restantes: <span id="vidasRestantes">0</span></p>
+                <button class="btn-resultado" onClick="window.location.reload()">Reiniciar</button>
+
+            </div>
+        </div>
+        <footer>
+            Desenvolvido por Wesley Martins ;)
+        </footer>
+    </div>
+
+
+
+<script defer src="./src/scripts/engine.js"></script>
+</body>
+
+</html>
